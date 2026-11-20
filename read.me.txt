@@ -1,0 +1,28 @@
+Please unzip the .zip file in your working directory.
+
+The list of files in the zip file: 
+
+              (1)  read.me.txt : provide the file list and some instructions.  
+
+              (2)  dynamic.FDE.R :  the R functions for our new method. 
+               
+              (3)  c_dynamic_FDE.cpp :  the C++ functions which are used in the 'dynamic.FDE.R'. 
+
+              (4)  sim.1.R :  the R code for Model 1. 
+
+              (5)  sim.2.R :  the R code for Model 2.
+
+              (6)  sim.3.R :  the R code for Model 3.
+    
+              (7)  sim.4.R :  the R code for Model 4.
+    
+              (8)  sim.5.R :  the R code for Model 5. 
+
+              (9)  sunspot_10days.R: the R code for the real data analysis.
+
+              (10) sunspots_1849_10days.RData: the data set for the real data analysis.   
+
+
+
+
+ 
