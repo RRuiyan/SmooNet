@@ -1,8 +1,10 @@
-# SmooNet and Functional Differential Equation (FDE) Methods
+# SmooNet and Functional Differential Equation (FDE) 
 
 ## Overview
 
-This repository contains source code and simulation scripts for the implementation and study of **SmooNet** and Functional Differential Equation (FDE)-based methodologies.
+SmooNet (Smooth Operator Neural Network) is a neural-network-based framework for learning and approximating functional differential equations (FDEs). Unlike ordinary differential equation (ODE) models, FDEs allow system dynamics to depend on both the current state and historical trajectories, enabling the modeling of memory and delay effects in complex dynamical systems. A unique feature of the SmooNet is that its hidden layer is a continuum with infinite number of nodes, which we call a hidden string, and the complexity of SmooNet is completely determined by the smoothness of the learnable functions. 
+
+This repository contains the implementation, simulation studies, and examples accompanying the published SmooNet methodology.
 
 The repository includes:
 
@@ -16,10 +18,10 @@ The repository includes:
 ### Core Implementation
 
 - `c_dynamic_FDE.cpp`  
-  C++ implementation of the SmooNet-based neural FDE methodology.
+  C++ implementation of the SmooNet/FDE framework.
 
 - `dynamic.FDE.R`  
-  R interface and functions for fitting and analyzing FDE models.
+  R functions for model fitting, estimation, and prediction.
 
 ### Simulation Studies
 
@@ -29,15 +31,15 @@ The repository includes:
 - `sim.4.R`
 - `sim.5.R`
 
-These scripts reproduce simulation experiments used to evaluate the proposed methodology under different settings.
+Simulation scripts used to evaluate model performance under multiple data-generating mechanisms.
+
 
 ### Example Data Analysis
 
-- `sunspot_10days.R`  
-  Example analysis using sunspot data.
+- sunspot_10days.R
+- sunspots_1849_10days.RData
+Example analysis and prediction of sunspot time-series data.
 
-- `sunspots_1849_10days.RData`  
-  Sunspot dataset used in the demonstration.
 
 ## Requirements
 
@@ -78,11 +80,28 @@ source("sunspot_10days.R")
 
 The simulation scripts are provided to facilitate reproduction of the numerical experiments associated with the proposed methodology. Users are encouraged to inspect the simulation settings and adapt them to their own applications.
 
+
+## Reference
+
+Luo, R., & Qi, X. (2026). *SmooNet: Smooth operator neural network and functional differential equation*. Neural Networks, 199, 108688.
+
+DOI: https://doi.org/10.1016/j.neunet.2026.108688
+
 ## Citation
 
-If you use this software in your research, please cite the associated publication describing the SmooNet and FDE methodology.
+If you use this repository in your research, please cite:
 
-Citation information will be added when the related manuscript is available.
+```bibtex
+@article{luo2026smoonet,
+  author  = {Luo, Ruiyan and Qi, Xin},
+  title   = {SmooNet: Smooth operator neural network and functional differential equation},
+  journal = {Neural Networks},
+  volume  = {199},
+  pages   = {108688},
+  year    = {2026},
+  doi      = {10.1016/j.neunet.2026.108688}
+}
+```
 
 ## License
 
