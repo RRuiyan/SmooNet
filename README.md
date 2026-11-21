@@ -26,10 +26,6 @@ The repository includes:
 ### Simulation Studies
 
 - `sim.1.R`
-- `sim.2.R`
-- `sim.3.R`
-- `sim.4.R`
-- `sim.5.R`
 
 Simulation scripts used to evaluate model performance under multiple data-generating mechanisms.
 
